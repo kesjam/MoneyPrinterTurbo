@@ -1,2 +1,7 @@
 [browser]
 gatherUsageStats = false
+serverPort = 8501
+[theme]
+base = "light"
+[runner]
+magicEnabled = false

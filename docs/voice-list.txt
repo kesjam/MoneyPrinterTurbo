@@ -901,8 +901,7 @@ Gender: Female
 Name: zh-CN-YunjianNeural
 Gender: Male
 
-Name: zh-CN-YunxiNeural
-Gender: Male
+Chinese (Simplified) | zh-CN-YunxiNeural | Male
 
 Name: zh-CN-YunxiaNeural
 Gender: Male

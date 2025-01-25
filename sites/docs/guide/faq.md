@@ -28,7 +28,7 @@ RuntimeError: No ffmpeg exe could be found.
 Install ffmpeg on your system, or set the IMAGEIO_FFMPEG_EXE environment variable.
 ```
 
-In this case, you can download ffmpeg from https://www.gyan.dev/ffmpeg/builds/, unzip it, and set `ffmpeg_path` to your
+In this case, you can download ffmpeg from <https://www.gyan.dev/ffmpeg/builds/>, unzip it, and set `ffmpeg_path` to your
 actual installation path.
 
 ```toml
@@ -60,11 +60,13 @@ This is likely due to network issues preventing access to foreign services. Plea
 [issue 33](https://github.com/harry0703/MoneyPrinterTurbo/issues/33)
 
 1. Follow the `example configuration` provided `download address` to
-   install https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-30-Q16-x64-static.exe, using the static library
+   install <https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-30-Q16-x64-static.exe>, using the static library
 2. Do not install in a path with Chinese characters to avoid unpredictable issues
 
 [issue 54](https://github.com/harry0703/MoneyPrinterTurbo/issues/54#issuecomment-2017842022)
 
-For Linux systems, you can manually install it, refer to https://cn.linux-console.net/?p=16978
+For Linux systems, you can manually install it, refer to <https://cn.linux-console.net/?p=16978>
 
 Thanks to [@wangwenqiao666](https://github.com/wangwenqiao666) for their research and exploration
+
+[Video Tutorial](../video-tutorial.md)

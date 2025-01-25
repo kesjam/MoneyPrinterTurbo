@@ -22,8 +22,12 @@ jobs:
         run: pnpm i
         working-directory: ./sites
       - name: Build gh-pages
-        run: pnpm docs:build
-        working-directory: ./sites
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          pnpm install
+          pnpm run docs:build
+          cd docs/.vuepress/dist && echo 'moneyprinterturbo.ai' > CNAME
       - name: Deploy to gh-pages
         uses: crazy-max/ghaction-github-pages@v1
         with:

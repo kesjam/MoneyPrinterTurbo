@@ -1,5 +1,6 @@
-<!-- insertion marker -->
-## [1.1.2](https://github.com/KevinZhang19870314/MoneyPrinterTurbo/releases/tag/1.1.2) - 2024-04-18
+# Changelog
+
+## [1.1.2](https://github.com/harry0703/MoneyPrinterTurbo/compare/v1.1.1...v1.1.2) (2024-05-20)
 
 <small>[Compare with first commit](https://github.com/KevinZhang19870314/MoneyPrinterTurbo/compare/d4f7b53b841e65da658e3d77822f9923286ddab6...1.1.2)</small>
 

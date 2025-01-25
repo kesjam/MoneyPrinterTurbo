@@ -54,3 +54,5 @@ def __init_logger():
 
 
 __init_logger()
+
+DEFAULT_LLM_BASE_URL = "https://api.deepseek.com/v1/"

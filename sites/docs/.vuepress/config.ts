@@ -2,12 +2,12 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 
-const base = "MoneyPrinterTurbo";
+const base = process.env.NODE_ENV === "production" ? "/MoneyPrinterTurbo/" : "/";
 const isProd = process.env.NODE_ENV === "production";
 
 export default defineUserConfig({
-  lang: "zh-CN",
-  base: `/${base}/`,
+  lang: "en-US",
+  base,
   bundler: viteBundler(),
   theme: defaultTheme({
     repo: "harry0703/MoneyPrinterTurbo",
@@ -18,7 +18,7 @@ export default defineUserConfig({
         // navbar
         navbar: [
           { text: "Guide", link: "/guide/" },
-          // { text: "Components", link: "/components/" },
+          { text: "中文文档", link: "/zh/guide/" },
         ],
         selectLanguageText: "Languages",
         selectLanguageName: "English",
@@ -112,6 +112,7 @@ export default defineUserConfig({
       // only enable git plugin in production mode
       git: isProd,
     },
+    logo: `${base}images/logo.png`,
   }),
   locales: {
     "/": {
@@ -132,7 +133,7 @@ export default defineUserConfig({
         rel: "icon",
         type: "image/png",
         sizes: "16x16",
-        href: `/${base}/icons/favicon-16x16.png`,
+        href: `${base}icons/favicon-16x16.png`,
       },
     ],
     [
@@ -141,7 +142,7 @@ export default defineUserConfig({
         rel: "icon",
         type: "image/png",
         sizes: "32x32",
-        href: `/${base}/icons/favicon-32x32.png`,
+        href: `${base}icons/favicon-32x32.png`,
       },
     ],
     ["meta", { name: "application-name", content: "MoneyPrinterTurbo" }],
@@ -158,14 +159,14 @@ export default defineUserConfig({
       "link",
       {
         rel: "apple-touch-icon",
-        href: `/${base}/icons/apple-touch-icon-152x152.png`,
+        href: `${base}icons/apple-touch-icon-152x152.png`,
       },
     ],
     [
       "link",
       {
         rel: "mask-icon",
-        href: "/${base}/icons/safari-pinned-tab.svg",
+        href: `${base}icons/safari-pinned-tab.svg`,
         color: "#3eaf7c",
       },
     ],
@@ -173,11 +174,12 @@ export default defineUserConfig({
       "meta",
       {
         name: "msapplication-TileImage",
-        content: "/${base}/icons/msapplication-icon-144x144.png",
+        content: `${base}icons/msapplication-icon-144x144.png`,
       },
     ],
     ["meta", { name: "msapplication-TileColor", content: "#000000" }],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ['link', { rel: 'icon', href: `${base}favicon.ico` }]
   ],
 });
 

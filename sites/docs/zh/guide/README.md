@@ -16,7 +16,7 @@
 
 ### Windows
 
-- 百度网盘: https://pan.baidu.com/s/1bpGjgQVE5sADZRn3A6F87w?pwd=xt16 提取码: xt16
+- 百度网盘: <https://pan.baidu.com/s/1bpGjgQVE5sADZRn3A6F87w?pwd=xt16> 提取码: xt16
 
 下载后，建议先**双击执行** `update.bat` 更新到**最新代码**，然后双击 `start.bat` 启动 Web 界面
 
@@ -46,7 +46,7 @@ git clone https://github.com/harry0703/MoneyPrinterTurbo.git
 #### ③ 配置大模型(LLM)
 
 - 如果要使用 `GPT-4.0` 或 `GPT-3.5`，需要有 `OpenAI` 的 `API Key`，如果没有，可以将 `llm_provider` 设置为 `g4f` (
-  一个免费使用 GPT 的开源库 https://github.com/xtekky/gpt4free ，但是该免费的服务，稳定性较差，有时候可以用，有时候用不了)
+  一个免费使用 GPT 的开源库 <https://github.com/xtekky/gpt4free> ，但是该免费的服务，稳定性较差，有时候可以用，有时候用不了)
 - 或者可以使用到 [月之暗面](https://platform.moonshot.cn/console/api-keys) 申请。注册就送
   15 元体验金，可以对话 1500 次左右。然后设置 `llm_provider="moonshot"` 和 `moonshot_api_key`
 - 也可以使用 通义千问，具体请看配置文件里面的注释说明
@@ -55,12 +55,12 @@ git clone https://github.com/harry0703/MoneyPrinterTurbo.git
 
 #### ① 启动 Docker
 
-如果未安装 Docker，请先安装 https://www.docker.com/products/docker-desktop/
+如果未安装 Docker，请先安装 <https://www.docker.com/products/docker-desktop/>
 
 如果是 Windows 系统，请参考微软的文档：
 
-1. https://learn.microsoft.com/zh-cn/windows/wsl/install
-2. https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-containers
+1. <https://learn.microsoft.com/zh-cn/windows/wsl/install>
+2. <https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-containers>
 
 ```shell
 cd MoneyPrinterTurbo
@@ -69,18 +69,18 @@ docker-compose up
 
 #### ② 访问 Web 界面
 
-打开浏览器，访问 http://0.0.0.0:8501
+打开浏览器，访问 <http://0.0.0.0:8501>
 
 #### ③ 访问 API 文档
 
-打开浏览器，访问 http://0.0.0.0:8080/docs 或者 http://0.0.0.0:8080/redoc
+打开浏览器，访问 <http://0.0.0.0:8080/docs> 或者 <http://0.0.0.0:8080/redoc>
 
 ### 手动部署 📦
 
 > 视频教程
 
-- 完整的使用演示：https://v.douyin.com/iFhnwsKY/
-- 如何在 Windows 上部署：https://v.douyin.com/iFyjoW3M
+- 完整的使用演示：<https://v.douyin.com/iFhnwsKY/>
+- 如何在 Windows 上部署：<https://v.douyin.com/iFyjoW3M>
 
 #### ① 创建虚拟环境
 
@@ -96,13 +96,13 @@ pip install -r requirements.txt
 
 #### ② 安装好 ImageMagick
 
-###### Windows:
+###### Windows
 
-- 下载 https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-30-Q16-x64-static.exe
+- 下载 <https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-30-Q16-x64-static.exe>
 - 安装下载好的 ImageMagick，注意不要修改安装路径
 - 修改 `配置文件 config.toml` 中的 `imagemagick_path` 为你的实际安装路径（如果安装的时候没有修改路径，直接取消注释即可）
 
-###### MacOS:
+###### MacOS
 
 ```shell
 brew install imagemagick
@@ -146,7 +146,7 @@ sh webui.sh
 python main.py
 ```
 
-启动后，可以查看 `API文档` http://127.0.0.1:8080/docs 或者 http://127.0.0.1:8080/redoc 直接在线调试接口，快速体验。
+启动后，可以查看 `API文档` <http://127.0.0.1:8080/docs> 或者 <http://127.0.0.1:8080/redoc> 直接在线调试接口，快速体验。
 
 ## 许可证 📝
 

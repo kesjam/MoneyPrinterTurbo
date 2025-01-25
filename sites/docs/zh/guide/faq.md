@@ -6,9 +6,9 @@
 
 **确保你安装和启动了docker服务**，执行以下命令启动docker服务
 
-```shell
+```bash
 docker run -p 3040:3040 missuo/freegpt35
-```
+```toml
 
 启动成功后，修改 `config.toml` 中的配置
 
@@ -28,34 +28,34 @@ docker run -p 3040:3040 missuo/freegpt35
 通常情况下，ffmpeg 会被自动下载，并且会被自动检测到。
 但是如果你的环境有问题，无法自动下载，可能会遇到如下错误：
 
-```
+```toml
 RuntimeError: No ffmpeg exe could be found.
 Install ffmpeg on your system, or set the IMAGEIO_FFMPEG_EXE environment variable.
-```
+```toml
 
-此时你可以从 https://www.gyan.dev/ffmpeg/builds/ 下载ffmpeg，解压后，设置 `ffmpeg_path` 为你的实际安装路径即可。
+此时你可以从 <https://www.gyan.dev/ffmpeg/builds/> 下载ffmpeg，解压后，设置 `ffmpeg_path` 为你的实际安装路径即可。
 
 ```toml
 [app]
 # 请根据你的实际路径设置，注意 Windows 路径分隔符为 \\
 ffmpeg_path = "C:\\Users\\harry\\Downloads\\ffmpeg.exe"
-```
+```toml
 
 ### ❓生成音频时报错或下载视频报错
 
 [issue 56](https://github.com/harry0703/MoneyPrinterTurbo/issues/56)
 
-```
+```toml
 failed to generate audio, maybe the network is not available. 
 if you are in China, please use a VPN.
-```
+```toml
 
 [issue 44](https://github.com/harry0703/MoneyPrinterTurbo/issues/44)
 
-```
+```toml
 failed to download videos, maybe the network is not available. 
 if you are in China, please use a VPN.
-```
+```toml
 
 这个大概率是网络原因，无法访问境外的服务，请使用VPN解决。
 
@@ -64,12 +64,12 @@ if you are in China, please use a VPN.
 [issue 33](https://github.com/harry0703/MoneyPrinterTurbo/issues/33)
 
 1. 按照 `示例配置` 里面提供的 `下载地址`
-   ，安装 https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-29-Q16-x64-static.exe, 用静态库
+   ，安装 <https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-29-Q16-x64-static.exe>, 用静态库
 2. 不要安装在中文路径里面，避免出现一些无法预料的问题
 
 [issue 54](https://github.com/harry0703/MoneyPrinterTurbo/issues/54#issuecomment-2017842022)
 
-如果是linux系统，可以手动安装，参考 https://cn.linux-console.net/?p=16978
+如果是linux系统，可以手动安装，参考 <https://cn.linux-console.net/?p=16978>
 
 感谢 [@wangwenqiao666](https://github.com/wangwenqiao666)的研究探索
 
@@ -91,15 +91,15 @@ if you are in China, please use a VPN.
 
 查看当前限制
 
-```shell
+```bash
 ulimit -n
-```
+```toml
 
 如果过低，可以调高一些，比如
 
-```shell
+```bash
 ulimit -n 10240
-```
+```toml
 
 ### ❓AttributeError: module 'PIL.Image' has no attribute 'ANTIALIAS'
 
@@ -109,15 +109,28 @@ ulimit -n 10240
 
 先看下当前的 Pillow 版本是多少
 
-```shell
+```bash
 pip list |grep Pillow
-```
+```toml
 
 如果是 10.x 的版本，可以尝试下降级看看，有用户反馈降级后正常
 
-```shell
+```bash
 pip uninstall Pillow
 pip install Pillow==9.5.0
 # 或者降级到 8.4.0
 pip install Pillow==8.4.0
-```
+```toml
+
+### ❓ImageMagick Installation Issues
+
+1. Download the static library version from the official site
+2. Install in a path without special characters
+
+For Linux systems:
+
+```bash
+wget https://www.imagemagick.org/download/binaries/magick
+chmod +x magick
+sudo mv magick /usr/local/bin/
+```toml

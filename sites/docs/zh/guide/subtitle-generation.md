@@ -18,8 +18,8 @@
 
 下载地址：
 
-- 百度网盘: https://pan.baidu.com/s/11h3Q6tsDtjQKTjUu3sc5cA?pwd=xjs9
-- 夸克网盘：https://pan.quark.cn/s/3ee3d991d64b
+- 百度网盘: <https://pan.baidu.com/s/11h3Q6tsDtjQKTjUu3sc5cA?pwd=xjs9>
+- 夸克网盘：<https://pan.quark.cn/s/3ee3d991d64b>
 
 模型下载后解压，整个目录放到 `.\MoneyPrinterTurbo\models` 里面，
 最终的文件路径应该是这样: `.\MoneyPrinterTurbo\models\whisper-large-v3`

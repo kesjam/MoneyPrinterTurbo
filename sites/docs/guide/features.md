@@ -4,8 +4,8 @@
   and `Web interface`
 - [x] Supports **AI-generated** video copy, as well as **customized copy**
 - [x] Supports various **high-definition video** sizes
-    - [x] Portrait 9:16, `1080x1920`
-    - [x] Landscape 16:9, `1920x1080`
+  - [x] Portrait 9:16, `1080x1920`
+  - [x] Landscape 16:9, `1920x1080`
 - [x] Supports **batch video generation**, allowing the creation of multiple videos at once, then selecting the most
   satisfactory one
 - [x] Supports setting the **duration of video clips**, facilitating adjustments to material switching frequency
@@ -18,7 +18,7 @@
 - [x] Supports integration with various models such as **OpenAI**, **moonshot**, **Azure**, **gpt4free**, **one-api**,
   **qianwen**, **Google Gemini**, **Ollama** and more
 
-❓[How to Use the Free OpenAI GPT-3.5 Model?](https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README-en.md#common-questions-)
+❓[How to Use Free OpenAI GPT-3.5?](../../README.md#common-questions-)
 
 ### Future Plans 📅
 

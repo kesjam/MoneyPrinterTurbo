@@ -1,1 +1,33 @@
-blank_issues_enabled: false
+name: Submit a Report
+description: Report content issues or other problems
+title: "[Report] "
+labels: ["report"]
+body:
+  - type: dropdown
+    id: report-type
+    attributes:
+      label: Report Type
+      options:
+        - Content Error
+        - Copyright Issue  
+        - Security Vulnerability
+        - Other Issues
+    validations:
+      required: true
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Detailed Description
+      description: Please provide specific details and evidence
+    validations:
+      required: true
+  - type: textarea  
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: How to reproduce the issue (if applicable)
+  - type: textarea
+    id: contact
+    attributes:
+      label: Contact Information
+      description: Optional contact method for follow-up

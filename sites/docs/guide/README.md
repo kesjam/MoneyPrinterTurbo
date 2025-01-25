@@ -29,17 +29,17 @@ git clone https://github.com/harry0703/MoneyPrinterTurbo.git
 #### ③ Configure Large Language Models (LLM)
 
 - To use `GPT-4.0` or `GPT-3.5`, you need an `API Key` from `OpenAI`. If you don't have one, you can set `llm_provider`
-  to `g4f` (a free-to-use GPT library https://github.com/xtekky/gpt4free)
+  to `g4f` (a free-to-use GPT library <https://github.com/xtekky/gpt4free>)
 
 ### Docker Deployment 🐳
 
 #### ① Launch the Docker Container
 
-If you haven't installed Docker, please install it first https://www.docker.com/products/docker-desktop/
+If you haven't installed Docker, please install it first <https://www.docker.com/products/docker-desktop/>
 If you are using a Windows system, please refer to Microsoft's documentation:
 
-1. https://learn.microsoft.com/en-us/windows/wsl/install
-2. https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers
+1. <https://learn.microsoft.com/en-us/windows/wsl/install>
+2. <https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers>
 
 ```shell
 cd MoneyPrinterTurbo
@@ -48,11 +48,11 @@ docker-compose up
 
 #### ② Access the Web Interface
 
-Open your browser and visit http://0.0.0.0:8501
+Open your browser and visit <http://0.0.0.0:8501>
 
 #### ③ Access the API Interface
 
-Open your browser and visit http://0.0.0.0:8080/docs Or http://0.0.0.0:8080/redoc
+Open your browser and visit <http://0.0.0.0:8080/docs> Or <http://0.0.0.0:8080/redoc>
 
 ### Manual Deployment 📦
 
@@ -71,14 +71,14 @@ pip install -r requirements.txt
 
 #### ② Install ImageMagick
 
-###### Windows:
+###### Windows
 
-- Download https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-29-Q16-x64-static.exe
+- Download <https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-29-Q16-x64-static.exe>
 - Install the downloaded ImageMagick, **do not change the installation path**
 - Modify the `config.toml` configuration file, set `imagemagick_path` to your actual installation path (if you didn't
   change the path during installation, just uncomment it)
 
-###### MacOS:
+###### MacOS
 
 ```shell
 brew install imagemagick
@@ -122,7 +122,7 @@ After launching, the browser will open automatically
 python main.py
 ```
 
-After launching, you can view the `API documentation` at http://127.0.0.1:8080/docs and directly test the interface
+After launching, you can view the `API documentation` at <http://127.0.0.1:8080/docs> and directly test the interface
 online for a quick experience.
 
 ## License 📝
