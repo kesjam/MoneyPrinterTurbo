@@ -1,17 +1,39 @@
+# Sensitive files
+.env
+*.key
+*.pem
+*.secret
+config.toml
+app/config.py
+webui/.streamlit/secrets.toml
+storage/
+*.mp4
+*.mp3
+*.wav
+*.srt
+
+# System files
 .DS_Store
-/config.toml
-/storage/
-/.idea/
-/app/services/__pycache__
-/app/__pycache__/
-/app/config/__pycache__/
-/app/models/__pycache__/
-/app/utils/__pycache__/
-/*/__pycache__/*
-.vscode
-/**/.streamlit
-__pycache__
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.venv
+venv/
+
+# Conda
+.env
+.conda
+conda_arm64_fix.sh
+
+# Logs
+*.log
 logs/
+
+# Editor
+.vscode/
+.idea/
 
 node_modules
 # VuePress 默认临时文件目录
@@ -23,3 +45,16 @@ node_modules
 # 模型目录
 /models/
 ./models/*
+
+# API Keys
+**/config.toml
+**/secrets.toml
+**/api_keys.txt
+
+# Local storage
+/storage/tasks/
+/storage/local_videos/
+
+# Credentials
+**/service_account.json
+**/oauth_token.*

@@ -63,8 +63,7 @@ if you are in China, please use a VPN.
 
 [issue 33](https://github.com/harry0703/MoneyPrinterTurbo/issues/33)
 
-1. 按照 `示例配置` 里面提供的 `下载地址`
-   ，安装 <https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-29-Q16-x64-static.exe>, 用静态库
+1. 安装 [ImageMagick Windows 版](/guide/faq.md#imageMagick-install)
 2. 不要安装在中文路径里面，避免出现一些无法预料的问题
 
 [issue 54](https://github.com/harry0703/MoneyPrinterTurbo/issues/54#issuecomment-2017842022)

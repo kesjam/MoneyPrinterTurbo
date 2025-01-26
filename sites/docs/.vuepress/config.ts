@@ -5,6 +5,11 @@ import { defineUserConfig } from "vuepress";
 const base = process.env.NODE_ENV === "production" ? "/MoneyPrinterTurbo/" : "/";
 const isProd = process.env.NODE_ENV === "production";
 
+const assetPath = (path: string) => 
+  path.startsWith('http') ? path : `${base}${path.replace(/^\//, '')}`
+
+const makeAbsolute = (path: string) => path.startsWith('/') ? `${base}${path.slice(1)}` : `${base}${path}`;
+
 export default defineUserConfig({
   lang: "en-US",
   base,
@@ -51,6 +56,7 @@ export default defineUserConfig({
         },
         // page meta
         editLinkText: "Edit this page on GitHub",
+        editLink: assetPath('edit/main/sites/docs/guide/')
       },
       "/zh/": {
         // navbar
@@ -106,13 +112,14 @@ export default defineUserConfig({
           "看起来我们进入了错误的链接",
         ],
         backToHome: "返回首页",
+        editLink: assetPath('edit/main/sites/docs/guide/')
       },
     },
     themePlugins: {
       // only enable git plugin in production mode
       git: isProd,
     },
-    logo: `${base}images/logo.png`,
+    logo: assetPath('images/logo.png'),
   }),
   locales: {
     "/": {

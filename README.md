@@ -92,3 +92,17 @@ model_name = "gpt-3.5-turbo"
 MIT Licensed. See [LICENSE](/LICENSE) for details.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=harry0703/MoneyPrinterTurbo&type=Date)](https://star-history.com/#harry0703/MoneyPrinterTurbo&Date)
+
+## Security Best Practices
+
+1. Never commit sensitive files:
+```bash
+git update-index --assume-unchanged config.toml
+```
+2. Use environment variables for secrets:
+```python
+import os
+API_KEY = os.getenv('PEXELS_API_KEY')
+```
+3. Rotate API keys quarterly
+4. Enable 2FA on your GitHub account

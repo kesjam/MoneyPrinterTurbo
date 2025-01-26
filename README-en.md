@@ -156,11 +156,11 @@ docker-compose up
 
 #### ② Access the Web Interface
 
-Open your browser and visit <http://0.0.0.0:8501>
+Open your browser and visit <http://localhost:8501>
 
 #### ③ Access the API Interface
 
-Open your browser and visit <http://0.0.0.0:8080/docs> Or <http://0.0.0.0:8080/redoc>
+Open your browser and visit </docs> or </redoc>
 
 ### Manual Deployment 📦
 
